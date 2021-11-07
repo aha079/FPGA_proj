@@ -1,0 +1,142 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 11 16:56:48 2021
+| Host         : Nick running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edgeDetection_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edgeDetection_0_1 (xilinx.com:user:edgeDetection:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 11 16:16:44 2021
+| Host         : Nick running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edgeDetection_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edgeDetection_0_1 (xilinx.com:user:edgeDetection:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 11 16:05:56 2021
+| Host         : Nick running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edgeDetection_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edgeDetection_0_1 (xilinx.com:user:edgeDetection:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 11 15:53:33 2021
+| Host         : Nick running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edgeDetection_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edgeDetection_0_1 (xilinx.com:user:edgeDetection:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 11 15:48:25 2021
+| Host         : Nick running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edgeDetection_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edgeDetection_0_1 (xilinx.com:user:edgeDetection:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 11 15:21:25 2021
+| Host         : Nick running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edgeDetection_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_edgeDetection_0_0 (xilinx.com:user:edgeDetection:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jul 11 14:28:01 2021
+| Host         : Nick running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_edgeDetection_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_edgeDetection_0_0 (xilinx.com:user:edgeDetection:1.0) from (Rev. 1) to (Rev. 2)
+

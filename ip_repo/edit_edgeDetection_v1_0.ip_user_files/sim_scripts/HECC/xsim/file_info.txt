@@ -1,0 +1,2 @@
+HECC.v,verilog,xil_defaultlib,../../../../edgeDetection_1.0/src/HECC/sim/HECC.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

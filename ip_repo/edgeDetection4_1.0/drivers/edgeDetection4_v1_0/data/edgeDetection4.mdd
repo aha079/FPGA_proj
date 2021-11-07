@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER edgeDetection4
+	OPTION supported_peripherals = (edgeDetection4);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = edgeDetection4;
+END DRIVER

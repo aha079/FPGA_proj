@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1157-1" LaunchTime="1626013706">
+  <File Type="PA-TCL" Name="filter_px.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="filter_px_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="filter_px_reports.tcl"/>
+  <File Type="RDS-RDS" Name="filter_px.vds"/>
+  <File Type="RDS-UTIL" Name="filter_px_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="filter_px_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="filter_px.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="filter_px_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="filter_px_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/HECC/HECC.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/CRC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Ev/university/semester 6/FPGA/Project/final_project/final_project.srcs/sources_1/new/CRC.vhd"/>
+        <Attr Name="ImportTime" Val="1625984338"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Ev/university/semester 6/FPGA/Project/final_project/final_project.srcs/sources_1/new/adder.vhd"/>
+        <Attr Name="ImportTime" Val="1625809839"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/packge_types.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Ev/university/semester 6/FPGA/Project/final_project/final_project.srcs/sources_1/new/packge_types.vhd"/>
+        <Attr Name="ImportTime" Val="1625983843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/filter_applier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Ev/university/semester 6/FPGA/Project/final_project/final_project.srcs/sources_1/new/filter_applier.vhd"/>
+        <Attr Name="ImportTime" Val="1625829276"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Ev/university/semester 6/FPGA/Project/final_project/final_project.srcs/sources_1/new/multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1625809812"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/reg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Ev/university/semester 6/FPGA/Project/final_project/final_project.srcs/sources_1/new/reg.vhd"/>
+        <Attr Name="ImportTime" Val="1625807366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/filter_px.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Ev/university/semester 6/FPGA/Project/final_project/final_project.srcs/sources_1/new/filter_px.vhd"/>
+        <Attr Name="ImportTime" Val="1625992245"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/testBench.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Debug/filter_sw.elf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSDKDIR/filter_sw/Debug/filter_sw.elf"/>
+        <Attr Name="ImportTime" Val="1626007074"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="filter_px"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopArchitecture" Val="Behavioral"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/new/filter_px.vhd"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_edgeDetection2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_edgeDetection3_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_edgeDetection_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_edgeDetection4_0_0"/>
+</GenRun>

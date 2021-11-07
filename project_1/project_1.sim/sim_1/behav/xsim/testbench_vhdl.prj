@@ -1,0 +1,35 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_edgeDetection_0_1/src/cordic_0/sim/cordic_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/src/CRC.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/src/adder.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/src/packge_types.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/hdl/edgeDetection_v1_0_S00_AXI.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/src/filter_applier.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/src/filter_px.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/src/multiplier.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/src/reg.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/f525/hdl/edgeDetection_v1_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_edgeDetection_0_1/sim/design_1_edgeDetection_0_1.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/cace/hdl/edgeDetection2_v1_0_S00_AXI.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/cace/hdl/edgeDetection2_v1_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_edgeDetection2_0_0/sim/design_1_edgeDetection2_0_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/0f10/hdl/edgeDetection3_v1_0_S00_AXI.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/0f10/hdl/edgeDetection3_v1_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_edgeDetection3_0_0/sim/design_1_edgeDetection3_0_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/b343/hdl/edgeDetection4_v1_0_S00_AXI.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ipshared/b343/hdl/edgeDetection4_v1_0.vhd" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_edgeDetection4_0_0/sim/design_1_edgeDetection4_0_0.vhd" \
+"../../../../project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+"../../../../project_1.srcs/sources_1/new/testBench.vhd" \
+
+# Do not sort compile order
+nosort

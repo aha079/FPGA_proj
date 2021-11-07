@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../edgeDetection3_1.0/src/cordic_0/sim/cordic_0.vhd" \
+
+nosort

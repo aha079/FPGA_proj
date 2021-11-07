@@ -1,0 +1,646 @@
+14:33:41 **** Build of project filter_sw_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/edgeDetection_v1_0/src"
+make -C microblaze_0/libsrc/edgeDetection_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/edgeDetection_v1_0/src"
+make -C microblaze_0/libsrc/edgeDetection_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling edgeDetection..."
+edgeDetection_selftest.c: In function 'EDGEDETECTION_Reg_SelfTest':
+edgeDetection_selftest.c:52:62: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( EDGEDETECTION_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                              ^~
+edgeDetection_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:33:53 **** Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2696	    268	   3108	   6072	   17b8	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+14:34:10 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2756	    268	   3112	   6136	   17f8	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+14:34:19 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2636	    268	   3112	   6016	   1780	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+14:34:44 **** Incremental Build of configuration Debug for project filter_sw ****
+make all 
+make: Nothing to be done for 'all'.
+14:47:34 **** Incremental Build of configuration Debug for project filter_sw ****
+make all 
+make: Nothing to be done for 'all'.
+15:00:33 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:5: warning: implicit declaration of function 'myWrite'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+     myWrite(base, reg0, 0x0000AA01);
+     ^~~~~~~
+     fwrite
+../src/helloworld.c:72:5: warning: implicit declaration of function 'myRead'; did you mean 'fread'? [-Wimplicit-function-declaration]
+     myRead(base, reg4);
+     ^~~~~~
+     fread
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/helloworld.o: in function `main':
+C:\Users\asus\Desktop\finalFPGA\project_1\project_1.sdk\filter_sw\Debug/../src/helloworld.c:68: undefined reference to `myWrite'
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: C:\Users\asus\Desktop\finalFPGA\project_1\project_1.sdk\filter_sw\Debug/../src/helloworld.c:69: undefined reference to `myWrite'
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: C:\Users\asus\Desktop\finalFPGA\project_1\project_1.sdk\filter_sw\Debug/../src/helloworld.c:70: undefined reference to `myWrite'
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: C:\Users\asus\Desktop\finalFPGA\project_1\project_1.sdk\filter_sw\Debug/../src/helloworld.c:71: undefined reference to `myWrite'
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: C:\Users\asus\Desktop\finalFPGA\project_1\project_1.sdk\filter_sw\Debug/../src/helloworld.c:72: undefined reference to `myRead'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: filter_sw.elf] Error 1
+15:01:08 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2636	    268	   3112	   6016	   1780	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+15:02:37 **** Incremental Build of configuration Debug for project filter_sw ****
+make all 
+make: Nothing to be done for 'all'.
+15:43:21 **** Incremental Build of configuration Debug for project filter_sw ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:16 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2636	    268	   3112	   6016	   1780	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+16:12:31 **** Incremental Build of configuration Debug for project filter_sw ****
+make all 
+make: Nothing to be done for 'all'.
+17:04:17 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:29: error: 'base' undeclared (first use in this function); did you mean 'base2'?
+     edgeDetection_mWriteReg(base, reg0, 0x0000AA02);
+                             ^~~~
+../src/helloworld.c:63:14: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^~~~~~~~~~~
+../src/helloworld.c:71:29: note: each undeclared identifier is reported only once for each function it appears in
+     edgeDetection_mWriteReg(base, reg0, 0x0000AA02);
+                             ^~~~
+../src/helloworld.c:63:14: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+              ^~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:05:33 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2636	    268	   3112	   6016	   1780	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+17:07:05 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3032	    268	   3108	   6408	   1908	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+17:07:11 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3032	    268	   3108	   6408	   1908	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+17:07:52 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3032	    268	   3108	   6408	   1908	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+17:08:00 **** Incremental Build of configuration Debug for project filter_sw ****
+make all 
+make: Nothing to be done for 'all'.
+17:34:33 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:6: warning: unused variable 'pixels8' [-Wunused-variable]
+  int pixels8[8][8] = {{90, 72, 38, 8, 55, 38, 245, 240},
+      ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3740	    268	   3112	   7120	   1bd0	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+17:46:16 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:17: warning: implicit declaration of function 'strtol'; did you mean 'strtok'? [-Wimplicit-function-declaration]
+  int num = (int)strtol(hex, NULL, 16);
+                 ^~~~~~
+                 strtok
+../src/helloworld.c:81:24: error: 'hex' undeclared (first use in this function); did you mean 'hex3'?
+  int num = (int)strtol(hex, NULL, 16);
+                        ^~~
+                        hex3
+../src/helloworld.c:81:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:81:6: warning: unused variable 'num' [-Wunused-variable]
+  int num = (int)strtol(hex, NULL, 16);
+      ^~~
+../src/helloworld.c:80:7: warning: unused variable 'hex3' [-Wunused-variable]
+  char hex3[32];
+       ^~~~
+../src/helloworld.c:79:7: warning: unused variable 'hex2' [-Wunused-variable]
+  char hex2[32];
+       ^~~~
+../src/helloworld.c:78:7: warning: unused variable 'hex1' [-Wunused-variable]
+  char hex1[32];
+       ^~~~
+../src/helloworld.c:70:6: warning: unused variable 'pixels8' [-Wunused-variable]
+  int pixels8[8][8] = {{90, 72, 38, 8, 55, 38, 245, 240},
+      ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+17:46:37 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:17: warning: implicit declaration of function 'strtol'; did you mean 'strtok'? [-Wimplicit-function-declaration]
+  int num = (int)strtol(hex1, NULL, 16);
+                 ^~~~~~
+                 strtok
+../src/helloworld.c:81:6: warning: unused variable 'num' [-Wunused-variable]
+  int num = (int)strtol(hex1, NULL, 16);
+      ^~~
+../src/helloworld.c:80:7: warning: unused variable 'hex3' [-Wunused-variable]
+  char hex3[32];
+       ^~~~
+../src/helloworld.c:79:7: warning: unused variable 'hex2' [-Wunused-variable]
+  char hex2[32];
+       ^~~~
+../src/helloworld.c:70:6: warning: unused variable 'pixels8' [-Wunused-variable]
+  int pixels8[8][8] = {{90, 72, 38, 8, 55, 38, 245, 240},
+      ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: filter_sw.elf section `.data' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 3152 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: filter_sw.elf] Error 1
+17:51:14 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:87:23: warning: implicit declaration of function 'strtol'; did you mean 'strtok'? [-Wimplicit-function-declaration]
+       int num1 = (int)strtol(hex1, NULL, 16);
+                       ^~~~~~
+                       strtok
+../src/helloworld.c:78:6: warning: unused variable 'pixels3' [-Wunused-variable]
+  int pixels3[3][3];
+      ^~~~~~~
+../src/helloworld.c:70:6: warning: unused variable 'pixels8' [-Wunused-variable]
+  int pixels8[8][8] = {{90, 72, 38, 8, 55, 38, 245, 240},
+      ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: filter_sw.elf section `.data' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 3216 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: filter_sw.elf] Error 1
+17:53:42 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:23: warning: implicit declaration of function 'strtol'; did you mean 'strtok'? [-Wimplicit-function-declaration]
+       int num1 = (int)strtol(hex1, NULL, 16);
+                       ^~~~~~
+                       strtok
+../src/helloworld.c:78:6: warning: variable 'pixels' set but not used [-Wunused-but-set-variable]
+  int pixels[3][3];
+      ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: filter_sw.elf section `.rodata' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+d:/massive-programs/vivado/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 3728 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: filter_sw.elf] Error 1
+17:59:18 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:41: error: 'num1' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:101:41: note: each undeclared identifier is reported only once for each function it appears in
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:102:41: error: 'num2' undeclared (first use in this function); did you mean 'u32'?
+    edgeDetection_mWriteReg(base1, reg2, num2);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:103:41: error: 'num3' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg3, num3);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:81:6: warning: unused variable 'hex3' [-Wunused-variable]
+  int hex3 = 0x00000000;
+      ^~~~
+../src/helloworld.c:80:6: warning: unused variable 'hex2' [-Wunused-variable]
+  int hex2 = 0x00000000;
+      ^~~~
+../src/helloworld.c:79:6: warning: unused variable 'hex1' [-Wunused-variable]
+  int hex1 = 0x00000000;
+      ^~~~
+../src/helloworld.c:78:6: warning: variable 'pixels' set but not used [-Wunused-but-set-variable]
+  int pixels[3][3];
+      ^~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+18:03:52 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:98:4: error: 'hex1' undeclared (first use in this function); did you mean 'reg1'?
+    hex1 = pixels[0][0] +
+    ^~~~
+    reg1
+../src/helloworld.c:98:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:99:13: error: lvalue required as left operand of assignment
+    quotient = decimalnum;
+             ^
+../src/helloworld.c:112:41: error: 'num1' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:113:41: error: 'num2' undeclared (first use in this function); did you mean 'u32'?
+    edgeDetection_mWriteReg(base1, reg2, num2);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:114:41: error: 'num3' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg3, num3);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:82:11: warning: variable 'hexadecimalnum' set but not used [-Wunused-but-set-variable]
+      char hexadecimalnum[100];
+           ^~~~~~~~~~~~~~
+../src/helloworld.c:81:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, j = 0;
+      ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+18:07:55 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:114:41: error: 'num1' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:114:41: note: each undeclared identifier is reported only once for each function it appears in
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:115:41: error: 'num2' undeclared (first use in this function); did you mean 'u32'?
+    edgeDetection_mWriteReg(base1, reg2, num2);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:116:41: error: 'num3' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg3, num3);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:99:9: warning: variable 'hexadecimalnum' set but not used [-Wunused-but-set-variable]
+    char hexadecimalnum[2];
+         ^~~~~~~~~~~~~~
+../src/helloworld.c:98:8: warning: unused variable 'i' [-Wunused-variable]
+    int i, j = 0;
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+18:09:17 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:116:41: error: 'num1' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:116:41: note: each undeclared identifier is reported only once for each function it appears in
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:117:41: error: 'num2' undeclared (first use in this function); did you mean 'u32'?
+    edgeDetection_mWriteReg(base1, reg2, num2);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:118:41: error: 'num3' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg3, num3);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:99:9: warning: variable 'hexadecimalnum' set but not used [-Wunused-but-set-variable]
+    char hexadecimalnum[2];
+         ^~~~~~~~~~~~~~
+../src/helloworld.c:98:8: warning: unused variable 'i' [-Wunused-variable]
+    int i, j = 0;
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+18:10:19 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:116:41: error: 'num1' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:116:41: note: each undeclared identifier is reported only once for each function it appears in
+    edgeDetection_mWriteReg(base1, reg1, num1);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:117:41: error: 'num2' undeclared (first use in this function); did you mean 'u32'?
+    edgeDetection_mWriteReg(base1, reg2, num2);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:118:41: error: 'num3' undeclared (first use in this function)
+    edgeDetection_mWriteReg(base1, reg3, num3);
+                                         ^~~~
+../src/helloworld.c:63:48: note: in definition of macro 'edgeDetection_mWriteReg'
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+                                                ^~~~
+../src/helloworld.c:99:9: warning: variable 'hexadecimalnum' set but not used [-Wunused-but-set-variable]
+    char hexadecimalnum[2] = {0, 0};
+         ^~~~~~~~~~~~~~
+../src/helloworld.c:98:8: warning: unused variable 'i' [-Wunused-variable]
+    int i, j = 0;
+        ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+18:14:39 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:3: warning: 'num2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+   ^~~~~~~~~
+../src/helloworld.c:81:12: note: 'num2' was declared here
+  int num1, num2, num3;
+            ^~~~
+../src/helloworld.c:63:3: warning: 'num3' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+   ^~~~~~~~~
+../src/helloworld.c:81:18: note: 'num3' was declared here
+  int num1, num2, num3;
+                  ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4448	    268	   3108	   7824	   1e90	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+18:16:03 **** Auto Build of configuration Debug for project filter_sw ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../filter_sw_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filter_sw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filter_sw_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "filter_sw.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filter_sw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size filter_sw.elf  |tee "filter_sw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4688	    268	   3108	   8064	   1f80	filter_sw.elf
+'Finished building: filter_sw.elf.size'
+' '
+18:25:48 **** Incremental Build of configuration Debug for project filter_sw ****
+make all 
+make: Nothing to be done for 'all'.
